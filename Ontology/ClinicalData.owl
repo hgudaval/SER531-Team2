@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#at">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#hospital"/>
+        <rdfs:comment>This object property defines the hospital where the consultation has been made.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#visits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#visits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation"/>
+        <rdfs:comment>This object property defines the relation between patient and his/ her consultation details.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#with">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#doctor"/>
+        <rdfs:comment>This object property defines whom the patient visits.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#hospital"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explains -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explains">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicitProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This data property defines the symptoms or details that the patient explains to the doctor.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicitProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicitProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#on -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#on">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicitProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#clinicalSittings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>This data property defines the date on which the consultation takes place.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#prescribes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#prescribes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicitProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This data property defines the prescription given to the patient by the doctor.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#clinicalSittings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#clinicalSittings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicit_classes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation"/>
+        <rdfs:comment>This class defines the clinical sittings pertaining to the consultation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#consultation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicit_classes"/>
+        <rdfs:comment>This class defines the consultation and visits.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#implicit_classes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#patient"/>
+        <rdfs:comment>This class defines the doctor who prescribes medications to the patient.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicit_classes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#explicit_classes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#implicit_classes"/>
+        <rdfs:comment>This class defines the place where the consultation takes place.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#implicit_classes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#implicit_classes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/himasrigudavalli/ontologies/2022/10/untitled-ontology-16#implicit_classes"/>
+        <rdfs:comment>This class defines the patient who explains their symptoms to the doctor.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
