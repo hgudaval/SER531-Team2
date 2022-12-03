@@ -1,0 +1,13 @@
+
+<div>
+    <h1>Healthcare Assistance</h1>
+<div class="form">
+   
+      <input style="width:50%" type="text" [(ngModel)]="searchText" placeholder="Enter your input data">
+    </div>
+    <br />
+      <button (click)="search()">Find</button>
+<br>
+<h4>Summarised text :</h4>
+<p style= "color:green; font-size: 14px;">{{outputText}}</p>
+</div>
